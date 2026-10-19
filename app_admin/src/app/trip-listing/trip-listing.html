@@ -1,7 +1,7 @@
 <!-- <pre>{{trips | json}}</pre> --> 
 
 <div>
-    <button (click)="addTrip()" class="btn btn-info">Add Trips</button>
+    <button *ngIf="isLoggedIn()" (click)="addTrip()" class="btn btn-info">Add Trips</button>
 </div>
 
 <!-- <p>Number of trips: {{ trips.length }}</p> -->
